@@ -3,6 +3,7 @@ FROM phusion/baseimage:0.9.16
 # Use baseimage-docker's init system.
 CMD ["/sbin/my_init"]
 
+# Install bind9
 # RUN apt-get update && apt-get install -y bind9
 VOLUME ["/etc/bind"]
 EXPOSE 53 53/udp
