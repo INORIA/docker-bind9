@@ -10,12 +10,11 @@ EXPOSE 53 53/udp
 
 # Launch bind9
 RUN mkdir /etc/service/bind9
-ADD services/bind9.sh /etc/service/bind9/run
+ADD /runit_bind9.sh /etc/service/bind9/run
 
 # enable SSH
-ENV SSH_DIR ./sshkeys
-ADD ${SSH_DIR}/key.pub /tmp/key.pub
-RUN cat /tmp/key.pub >> /root/.ssh/authorized_keys && rm -f /tmp/key.pub
+ADD /ssh.pub /tmp/ssh.pub
+RUN cat /tmp/ssh.pub >> /root/.ssh/authorized_keys && rm -f /tmp/ssh.pub
 RUN rm -f /etc/service/sshd/down
 # RUN /etc/my_init.d/00_regen_ssh_host_keys.sh
 
