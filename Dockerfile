@@ -4,9 +4,13 @@ FROM phusion/baseimage:0.9.16
 CMD ["/sbin/my_init"]
 
 # Install bind9
-# RUN apt-get update && apt-get install -y bind9
+RUN apt-get update && apt-get install -y bind9
 VOLUME ["/etc/bind"]
 EXPOSE 53 53/udp
+
+# Launch bind9
+RUN mkdir /etc/service/bind9
+ADD services/bind9.sh /etc/service/bind9/run
 
 # enable SSH
 ENV SSH_DIR ./sshkeys
