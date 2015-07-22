@@ -11,6 +11,7 @@ cp ../../data/* ./data/
 docker build -t inoria/bind9-data .
 docker run -d --name $DATA_NAME inoria/bind9-data /bin/bash
 # clean up
+git checkout .
 git clean -df .
 
 # Create bind9 server container
