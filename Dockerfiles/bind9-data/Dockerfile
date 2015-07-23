@@ -1,6 +1,6 @@
 FROM inoria/bind9
 
-ADD /data/* /etc/bind/
+ADD data /etc/bind
 
 VOLUME ["/etc/bind"]
 
