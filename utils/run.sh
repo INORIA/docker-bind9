@@ -16,6 +16,6 @@ docker run -d --name $DATA_NAME inoria/bind9-data /bin/bash
 # git clean -df data
 
 # Create bind9 server container
-docker run -d --volumes-from bind9-data --name $NAME inoria/bind9 /sbin/my_init
+docker run -d -p 53:53 -p 53:53/udp --volumes-from bind9-data --name $NAME inoria/bind9 /sbin/my_init
 
 
