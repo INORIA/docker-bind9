@@ -1,0 +1,17 @@
+view "external" {
+	match-clients { any; };
+	allow-query { any; };
+	recursion no;
+	
+	zone "goldfish-bowl.jp" {
+		type master;
+		file "/etc/bind/zones/goldfish-bowl.jp.wan";
+		allow-update { none; };
+	};
+
+	zone "84.54.130.133.in-addr.arpa" {
+		type master;
+		file "/etc/bind/zones/goldfish-bowl.jp.rev";
+		allow-update { none; };
+	};
+};
