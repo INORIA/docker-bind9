@@ -7,6 +7,7 @@ DATA_NAME=bind9-data
 
 # Create bind9 data volume container
 cd Dockerfiles/bind9-data
+rm -r ./data/*
 cp -r ../../data/* ./data/
 docker build -t inoria/bind9-data .
 docker run -d --name $DATA_NAME inoria/bind9-data /bin/bash
