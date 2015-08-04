@@ -7,10 +7,10 @@ $TTL 86400
         86400     ;Minimum TTL
 )
 
-@       IN  NS    ns1.goldfish-bowl.jp.
-@       IN  NS    ns2.goldfish-bowl.jp.
-@       IN  A     133.130.54.84
+        IN  NS    ns1.goldfish-bowl.jp.
 
-ns1     IN  A     133.130.54.84
-ns2     IN  A     133.130.50.23
+        IN  PTR   goldfish.bowl.jp.
+	IN  A     255.255.255.0
+
+84      IN  PTR   ns1.goldfish-bowl.jp.
 

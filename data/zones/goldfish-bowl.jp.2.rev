@@ -1,5 +1,5 @@
 $TTL 86400
-@   IN  SOA     dns.goldfish-bowl.jp. inoria7044.gmail.com. (
+@   IN  SOA     ns2.goldfish-bowl.jp. inoria7044.gmail.com. (
         20150726  ;Serial
         3600      ;Refresh
         1800      ;Retry
@@ -7,10 +7,10 @@ $TTL 86400
         86400     ;Minimum TTL
 )
 
-        IN  NS    dns.goldfish-bowl.jp.
+        IN  NS    dns2.goldfish-bowl.jp.
 
         IN  PTR   goldfish.bowl.jp.
 	IN  A     255.255.255.0
 
-84      IN  PTR   dns.goldfish-bowl.jp.
+23      IN  PTR   dns2.goldfish-bowl.jp.
 

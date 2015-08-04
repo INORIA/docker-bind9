@@ -11,7 +11,13 @@ view "external" {
 
 	zone "84.54.130.133.in-addr.arpa" {
 		type master;
-		file "/etc/bind/zones/goldfish-bowl.jp.rev";
+		file "/etc/bind/zones/goldfish-bowl.jp.1.rev";
+		allow-update { none; };
+	};
+
+	zone "23.50.130.133.in-addr.arpa" {
+		type master;
+		file "/etc/bind/zones/goldfish-bowl.jp.2.rev";
 		allow-update { none; };
 	};
 };
