@@ -1,5 +1,5 @@
 $TTL 86400
-@   IN  SOA     ns2.goldfish-bowl.jp. inoria7044.gmail.com. (
+@   IN  SOA     ns2.goldfish-bowl.jp. root.goldfish-bowl.jp. (
         20150726  ;Serial
         3600      ;Refresh
         1800      ;Retry
