@@ -1,7 +1,10 @@
 view "external" {
 	match-clients { any; };
 	allow-query { any; };
+	allow-query-cache { none; };
+	allow-update { none; };
 	recursion no;
+	allow-transfer { none; };
 	
 	zone "goldfish-bowl.jp" {
 		type master;
