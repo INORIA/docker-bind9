@@ -1,15 +1,23 @@
 $TTL 86400
 @   IN  SOA     ns1.goldfish-bowl.jp. root.goldfish-bowl.jp. (
-        20150726  ;Serial
-        3600      ;Refresh
-        1800      ;Retry
-        604800    ;Expire
-        86400     ;Minimum TTL
+        2015072601  ;Serial
+        3600        ;Refresh
+        1800        ;Retry
+        604800      ;Expire
+        86400       ;Minimum TTL
 )
 
 @       IN  NS    ns1.goldfish-bowl.jp.
 @       IN  NS    ns2.goldfish-bowl.jp.
 @       IN  A     133.130.54.84
+
+// Google Apps
+@       IN  TXT   "google-site-verification=oubCckQIhvUS8sSFngo7TZX9TakKaT4_e3AFw6HNSdQ"
+@       IN  MX 1  ASPMX.L.GOOGLE.COM
+@       IN  MX 5  ALT1.ASPMX.L.GOOGLE.COM
+@       IN  MX 5  ALT2.ASPMX.L.GOOGLE.COM
+@       IN  MX 10 ALT3.ASPMX.L.GOOGLE.COM
+@       IN  MX 10 ALT4.ASPMX.L.GOOGLE.COM
 
 ns1     IN  A     133.130.54.84
 ns2     IN  A     133.130.50.23
