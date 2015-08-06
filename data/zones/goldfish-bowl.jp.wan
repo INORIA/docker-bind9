@@ -11,7 +11,7 @@ $TTL 86400
 @       IN  NS    ns2.goldfish-bowl.jp.
 @       IN  A     133.130.54.84
 
-// Google Apps
+;Google Apps
 @       IN  TXT   "google-site-verification=oubCckQIhvUS8sSFngo7TZX9TakKaT4_e3AFw6HNSdQ"
 @       IN  MX 1  ASPMX.L.GOOGLE.COM
 @       IN  MX 5  ALT1.ASPMX.L.GOOGLE.COM
